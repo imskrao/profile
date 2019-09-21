@@ -1,0 +1,60 @@
+.about {
+    height: 100vh;
+    background-color: #f8f8fa;
+    padding: 100px 150px 100px 100px;
+}
+
+.aboutBox {
+    background: #fff;
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    height: calc(100vh - 200px);
+    display: flex;
+}
+
+.aboutDics {
+    width: 50%;
+    padding: 5%;
+    font-family: 'open sans', sans-serif;
+}
+
+.aboutDics p {
+    line-height: 40px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.aboutImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImg img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+}
+
+.aboutButton {
+    background-color: #333547;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    width: 165px;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 3px;
+    font-weight: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.aboutButton:hover {
+    color: #b4c9de;
+}
+
+.servicesButton {
+    background-color: #da1b60;
+    margin-left: 10px;
+}
