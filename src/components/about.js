@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
 import Classes from './../styles/about.module.css'
-import { Link, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import FontAwesome from 'react-fontawesome'
+import PageWrapper from './page-wrapper'
 
 export default class About extends Component  {
     constructor(props) {
@@ -63,33 +64,35 @@ export default class About extends Component  {
 
     render() {
         return (
-            <div className={Classes.about}>
-                <div className={Classes.title}>
-                    <h1>About <span>{this.state.title}</span></h1>
-                </div>
-                <div className={Classes.aboutBox}>
-                    <div className={Classes.info}>
-                        <h1 className={Classes.infoTitle}>{this.state.title}</h1>
-                        <p>Age: <span>{this.state.age}</span></p>
-                        <p>Job: <span>{this.state.jobTitle}</span></p>
-                        <div className={Classes.socilIcons}>
-                            {this.createSocial()}
-                        </div>
+            <PageWrapper>
+                <div className={Classes.about}>
+                    <div className={Classes.title}>
+                        <h1>About <span>{this.state.title}</span></h1>
                     </div>
-                    <div className={Classes.aboutDics}>
-                        <strong>Hello!</strong>
-                        <div className={Classes.aboutSummary}>
-                            <p>{this.state.about1}</p>
-                            <p>{this.state.about2}</p>
-                            <p>{this.state.about3}</p>
+                    <div className={Classes.aboutBox}>
+                        <div className={Classes.info}>
+                            <h1 className={Classes.infoTitle}>{this.state.title}</h1>
+                            <p>Age: <span>{this.state.age}</span></p>
+                            <p>Job: <span>{this.state.jobTitle}</span></p>
+                            <div className={Classes.socilIcons}>
+                                {this.createSocial()}
+                            </div>
                         </div>
-                        <div>
-                            <Link to="/contact" className={Classes.aboutButton}>{this.state.contact}</Link>
-                        </div>
+                        <div className={Classes.aboutDics}>
+                            <strong>Hello!</strong>
+                            <div className={Classes.aboutSummary}>
+                                <p>{this.state.about1}</p>
+                                <p>{this.state.about2}</p>
+                                <p>{this.state.about3}</p>
+                            </div>
+                            <div>
+                                <Link to="/contact" className={Classes.aboutButton}>{this.state.contact}</Link>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
+            </PageWrapper>
         )
     }
 }
