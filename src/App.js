@@ -10,6 +10,7 @@ import Skills from './components/skills';
 import Education from './components/education';
 import Project from './components/project';
 import Contact from './components/contact';
+import Post from './components/post';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/skills'  component={Skills}/>
           <Route path='/eduction'  component={Education}/>
           <Route path='/projects'  component={Project}/>
+          <Route path='/post'  component={Post}/>
           <Route path='/contact'  component={Contact}/>
           <Route path='/' exact component={Home}/>
         </div>

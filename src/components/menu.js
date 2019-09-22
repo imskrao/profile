@@ -41,6 +41,11 @@ export default class Menu extends Component {
                     link: '/projects'
                 },
                 {
+                    icon: 'pencil',
+                    text: 'Post',
+                    link: '/post'
+                },
+                {
                     icon: 'phone',
                     text: 'Contact',
                     link: '/contact'
